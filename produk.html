@@ -88,95 +88,12 @@
     <section>
       <div class="container">
         <div class="portfolio mt-5">
-                <div>
-                        <div class="row">
-                          <div class="col-lg-3 product-item">
-                            <div class="text-center">
-                              <div class="icon d-flex align-items-end"><img src="img/product1.jpg" alt="..." class="img-fluid"></div>
-                              <p>Timing Belt</p>
-                              <!-- <p class="text-small font-weight-light">Rp. 2.500.000</p> -->
-                            </div>
-                          </div>
-                          <div class="col-lg-3 product-item">
-                            <div class="text-center">
-                              <div class="icon d-flex align-items-end"><img src="img/product2.png" alt="..." class="img-fluid"></div>
-                              <p>Alternator</p>
-                              <!-- <p class="text-small font-weight-light">Rp. 3.450.000</p> -->
-                            </div>
-                          </div>
-                          <div class="col-lg-3 product-item">
-                            <div class="text-center">
-                              <div class="icon d-flex align-items-end"><img src="img/product3.png" alt="..." class="img-fluid"></div>
-                              <p>Engine Oil Pump</p>
-                              <!-- <p class="text-small font-weight-light">Rp. 30.000</p> -->
-                            </div>
-                          </div>
-                          <div class="col-lg-3 product-item">
-                            <div class="text-center">
-                              <div class="icon d-flex align-items-end"><img src="img/product4.jpg" alt="..." class="img-fluid"></div>
-                              <p>Steering Oil Pump</p>
-                              <!-- <p class="text-small font-weight-light">Rp. 400.000</p> -->
-                            </div>
-                          </div>
-                          <div class="col-lg-3 product-item">
-                            <div class="text-center">
-                              <div class="icon d-flex align-items-end"><img src="img/product5.jpg" alt="..." class="img-fluid"></div>
-                              <p>Dinamo Starter</p>
-                              <!-- <p class="text-small font-weight-light">Rp. 3.500.000</p> -->
-                            </div>
-                          </div>
-                          <div class="col-lg-3 product-item">
-                            <div class="text-center">
-                              <div class="icon d-flex align-items-end"><img src="img/product6.jpg" alt="..." class="img-fluid"></div>
-                              <p>Brake Caliper</p>
-                              <!-- <p class="text-small font-weight-light">Rp. 2.000.000</p> -->
-                            </div>
-                          </div>
-                          <div class="col-lg-3 product-item">
-                              <div class="text-center">
-                                <div class="icon d-flex align-items-end"><img src="img/product7.jpg" alt="..." class="img-fluid"></div>
-                                <p>Kampas Rem</p>
-                                <!-- <p class="text-small font-weight-light">Rp. 4.000.000</p> -->
-                              </div>
-                            </div>
-                            <div class="col-lg-3 product-item">
-                              <div class="text-center">
-                                <div class="icon d-flex align-items-end"><img src="img/product8.png" alt="..." class="img-fluid"></div>
-                                <p>Kampas Kopling</p>
-                                <!-- <p class="text-small font-weight-light">Rp. 1.000.000</p> -->
-                              </div>
-                            </div>
-                            <div class="col-lg-3 product-item">
-                              <div class="text-center">
-                                <div class="icon d-flex align-items-end"><img src="img/product9.jpg" alt="..." class="img-fluid"></div>
-                                <p>Nozzle Holder Fuel Injector</p>
-                                <!-- <p class="text-small font-weight-light">Rp. 500.000</p> -->
-                              </div>
-                            </div>
-                            <div class="col-lg-3 product-item">
-                              <div class="text-center">
-                                <div class="icon d-flex align-items-end"><img src="img/product10.jpg" alt="..." class="img-fluid"></div>
-                                <p>Piston & Ring Set</p>
-                                <!-- <p class="text-small font-weight-light">Rp 300.000</p> -->
-                              </div>
-                            </div>
-                            <div class="col-lg-3 product-item">
-                              <div class="text-center">
-                                <div class="icon d-flex align-items-end"><img src="img/product11.jpg" alt="..." class="img-fluid"></div>
-                                <p>Crankshaft</p>
-                                <!-- <p class="text-small font-weight-light">Rp. 1.000.000</p> -->
-                              </div>
-                            </div>
-                            <div class="col-lg-3 product-item">
-                              <div class="text-center">
-                                <div class="icon d-flex align-items-end"><img src="img/product12.jpg" alt="..." class="img-fluid"></div>
-                                <p>Center Bearing Propeller Shaft</p>
-                                <!-- <p class="text-small font-weight-light">Rp. 1.000.000</p> -->
-                              </div>
-                            </div>
-                        </div>
+          <div>
+            <div class="row" id="product-list">
+          </div>
         </div>
       </div>
+    </div>
     </section>
     <section>
       <div class="container">
@@ -273,6 +190,85 @@
     <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
     <script src="vendor/lightbox2/js/lightbox.js"></script>
     <script src="js/front.js"></script>
+    <script>
+    const products =
+    [
+    { 
+        "id": 1,
+        "name": "Timing Belt",
+        "imageUrl": "img/product1.jpg"
+    },
+    { 
+        "id": 2,
+        "name": "Alternator",
+        "imageUrl": "img/product2.png"
+    },
+    { 
+        "id": 3,
+        "name": "Engine Oil Pump",
+        "imageUrl": "img/product3.png"
+    },
+    { 
+        "id": 4,
+        "name": "Steering Oil Pump",
+        "imageUrl": "img/product4.jpg"
+    },
+    { 
+        "id": 5,
+        "name": "Dinamo Starter",
+        "imageUrl": "img/product5.jpg"
+    },
+    { 
+        "id": 6,
+        "name": "Brake Caliper",
+        "imageUrl": "img/product6.jpg"
+    },
+    { 
+        "id": 7,
+        "name": "Kampas Rem",
+        "imageUrl": "img/product7.jpg"
+    },
+    { 
+        "id": 8,
+        "name": "Kampas Kopling",
+        "imageUrl": "img/product8.png"
+    },
+    { 
+        "id": 9,
+        "name": "Nozzle Holder Fuel Injector",
+        "imageUrl": "img/product9.jpg"
+    },
+    { 
+        "id": 10,
+        "name": "Piston & Ring Set",
+        "imageUrl": "img/product10.jpg"
+    },
+    { 
+        "id": 11,
+        "name": "Crankshaft",
+        "imageUrl": "img/product11.jpg"
+    },
+    { 
+        "id": 12,
+        "name": "Center Bearing Propeller Shaft",
+        "imageUrl": "img/product12.jpg"
+    }
+]
+
+products.forEach( data => {
+$('#product-list').append(`
+  <div class="col-lg-3 product-item">
+    <div class="text-center">
+      <div class="icon d-flex align-items-end"><img src=${data.imageUrl} alt="..." class="img-fluid"></div>
+      <p>${data.name}</p>
+      <!-- <p class="text-small font-weight-light">Rp. 2.500.000</p> -->
+    </div>
+  </div>
+`)
+})
+
+    </script>
+
 </div>
   </body>
 </html>
